@@ -1,0 +1,4 @@
+export interface PostHttp {
+    posts: []
+}
+    

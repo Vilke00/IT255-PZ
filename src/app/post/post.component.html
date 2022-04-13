@@ -1,0 +1,17 @@
+<table class="table table-hover">
+    <thead class="thead-dark">
+    <tr>
+    <th scope="col">Name</th>
+    <th scope="col">Email</th>
+    <th scope="col">Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let post of posts$ | async">
+    <td>{{ post.name }}</td>
+    <td>{{ post.email }}</td>
+    <td>{{ post.body }}</td>
+    </tr>
+    </tbody>
+    </table>
+    

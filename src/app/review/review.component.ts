@@ -1,5 +1,6 @@
 import { Component, OnInit} from '@angular/core';
 import { FormBuilder , FormGroup, FormControl, Validators} from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-review',
@@ -15,7 +16,7 @@ export class ReviewComponent implements OnInit {
     comment: ['', Validators.required]
   });
   
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder, private router:Router) { }
 
   ngOnInit(): void {
   }
@@ -28,4 +29,8 @@ export class ReviewComponent implements OnInit {
   get lastName() { return this.reviewForm.get('lastName'); }
   get email() { return this.reviewForm.get('email'); }
   get comment() { return this.reviewForm.get('comment'); }
+
+  checkComments(){
+    this.router.navigate(['/comments']);
+  }
 }

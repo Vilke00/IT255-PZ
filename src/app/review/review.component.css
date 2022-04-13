@@ -39,7 +39,6 @@ label, p, textarea{
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 14px;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 8px;
@@ -59,4 +58,15 @@ label, p, textarea{
     margin-right: auto;
     margin-left: auto;
     color: red;
+  }
+
+  .route{
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #008CBA;
+    width: 180px;
+    cursor: pointer;
+    color: white;
   }

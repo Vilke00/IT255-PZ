@@ -60,5 +60,8 @@
     <p>Complete the form to enable button.</p>
     <button class="button" type="submit" [disabled]="!reviewForm.valid">Submit</button>
 </div>
+<div (click) = "checkComments()" class="route">
+    Check other comments
+</div>
   
 </form>
