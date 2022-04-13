@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { MovieService } from '../movie.service';
 
 @Component({
@@ -8,7 +9,7 @@ import { MovieService } from '../movie.service';
 })
 export class TopbarComponent implements OnInit {
 
-  constructor(public movieService:MovieService) { }
+  constructor(public movieService:MovieService, private router:Router) { }
 
   ngOnInit(): void {
   }
@@ -25,4 +26,13 @@ export class TopbarComponent implements OnInit {
       console.error(err);
     })
   }
+
+  leaveReview(){
+    this.router.navigate(['/review']);
+  }
+
+  home(){
+    this.router.navigate(['/home']);
+  }
+
 }

@@ -1,0 +1,62 @@
+input[type=text], select {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  input[type=email], select {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+label, p, textarea{  
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+  .button {
+    background-color: #008CBA; 
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  div {
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  .alert-danger{
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    color: red;
+  }
