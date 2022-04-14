@@ -1,6 +1,13 @@
 <div class="container">
-    <div (click) = "viewMovie(movie.id)" class="card" *ngFor="let movie of movieService.movies">
+    <!-- <div (click) = "viewMovie(movie.id)" class="card" *ngFor="let movie of movieService.movies">
         <img class="cover" [src]="'https://www.themoviedb.org/t/p/w500' + movie.poster_path" alt="Movie poster">
+        <div class="title">
+            {{movie.original_title}} ({{movie.vote_average}})
+        </div>
+    </div> -->
+    <div class="card" *ngFor="let movie of movieService.movies">
+        <a [routerLink]="['/movie', movie.id]">
+        <img class="cover" [src]="'https://www.themoviedb.org/t/p/w500' + movie.poster_path" alt="Movie poster"></a>
         <div class="title">
             {{movie.original_title}} ({{movie.vote_average}})
         </div>

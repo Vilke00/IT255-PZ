@@ -27,12 +27,12 @@ export class TopbarComponent implements OnInit {
     })
   }
 
-  leaveReview(){
-    this.router.navigate(['/review']);
-  }
+  // leaveReview(){
+  //   this.router.navigate(['/review']);
+  // }
 
-  home(){
-    this.router.navigate(['/home']);
-  }
+  // home(){
+  //   this.router.navigate(['/home']);
+  // }
 
 }

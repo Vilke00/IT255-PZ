@@ -1,13 +1,23 @@
 <div class="container">
-    <div (click) = "home()" class="branding align-content">
+    <!-- <div (click) = "home()" class="branding align-content">
         IT255-PZ
+    </div> -->
+    <div class="branding align-content">
+        <a [routerLink]="['/home']">
+            IT255-PZ
+        </a>
     </div>
     <div class="search-container align-content">
         <input (keyup.enter)="handleKeyUp()" [(ngModel)]="searchText" type="text" class="searchbar" placeholder=Search.../>
     </div>
     <div>
-        <div (click) = "leaveReview()" class="review-container">
-            Leave a comment
+        <!-- <div (click) = "leaveReview()" class="review-container">
+            Leave a comment 
+        </div> -->
+        <div class="review-container">
+            <a [routerLink]="['/review']">
+                Leave a comment
+            </a>
         </div>
     </div>
 </div>

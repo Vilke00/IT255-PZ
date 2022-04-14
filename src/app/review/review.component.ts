@@ -23,13 +23,21 @@ export class ReviewComponent implements OnInit {
 
   onSubmit() {
     console.warn(this.reviewForm.value);
+    alert("Thank you for review");
+    this.firstName.setValue('');
+    this.lastName.setValue('');
+    this.email.setValue('');
+    this.comment.setValue('');
+    this.reviewForm.markAsPristine();
+    this.reviewForm.markAsUntouched();
+    this.reviewForm.updateValueAndValidity();
   }
   get firstName() { return this.reviewForm.get('firstName'); }
   get lastName() { return this.reviewForm.get('lastName'); }
   get email() { return this.reviewForm.get('email'); }
   get comment() { return this.reviewForm.get('comment'); }
 
-  checkComments(){
-    this.router.navigate(['/comments']);
-  }
+  // checkComments(){
+  //   this.router.navigate(['/comments']);
+  // }
 }

@@ -21,8 +21,8 @@ export class HomeComponent implements OnInit {
 
   }
 
-  viewMovie(movieid:any){
-    this.router.navigate(['/movie', movieid])
-  }
+  // viewMovie(movieid:any){
+  //   this.router.navigate(['/movie', movieid])
+  // }
 
 }
