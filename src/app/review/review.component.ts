@@ -22,7 +22,6 @@ export class ReviewComponent implements OnInit {
   }
 
   onSubmit() {
-    // TODO: Use EventEmitter with form value
     console.warn(this.reviewForm.value);
   }
   get firstName() { return this.reviewForm.get('firstName'); }
